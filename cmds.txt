@@ -1,0 +1,42 @@
+kondave2@delta:~/Desktop/Project$ ./clientw24 127.0.0.1
+Connected to server on port 3160
+clientw24$ dirlist -a
+adieu
+dir1
+dir2
+today14
+clientw24$ dirlist -t
+dir1
+dir2
+adieu
+today14
+clientw24$ w24fs sample.txt
+File: /home/kondave2/Desktop/Project/Testtar/sample.txt, Size: 7 bytes, Modified: Tue 09 Apr 2024 10:59:52 PM, Permissions: 644
+clientw24$ w24fs jhdfsjf.txt
+File not found
+clientw24$ w24fz 5 8
+Bytes read: 203, Bytes written: 203
+File saved successfully
+clientw24$ w24fz 8 5
+ size1 must be <= size2 and both must be >= 0
+clientw24$ w24fz -1 5
+ size1 must be <= size2 and both must be >= 0
+clientw24$ w24fz 2 5
+No file found
+clientw24$ w24ft c txt 
+Bytes read: 335, Bytes written: 335
+File saved successfully
+clientw24$ w24ft pdf 
+No file found.
+clientw24$ w24ft 1 3 4 5 
+Invalid number of file types. Must be between 1 and 3.
+clientw24$ w24fdb 2024-04-10
+Bytes read: 164, Bytes written: 164
+File saved successfully
+clientw24$ w24fda 2024-04-14
+Bytes read: 303, Bytes written: 303
+File saved successfully
+clientw24$ quitc 
+Bye Bye!!
+Terminated
+kondave2@delta:~/Desktop/Project$ 
